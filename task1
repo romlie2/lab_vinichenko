@@ -1,0 +1,12 @@
+dict_1 = {1: 'a', 2: 'b'}
+dict_2 = {2: 'c', 4: 'd'}
+
+dict_3 = dict_1.copy()
+dict_3.update(dict_2)
+print(f"Способ 1: {dict_3}")
+
+dict_3 = dict_1 | dict_2
+print(f"Способ 2: {dict_3}")
+
+dict_3 = {**dict_1, **dict_2}
+print(f"Способ 3: {dict_3}")
